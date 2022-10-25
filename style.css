@@ -17,6 +17,31 @@ body {
 }
 
 /* HEADER */
+#header {
+    font-family: Poppins,Arial,sans-serif;
+}
+
+.pre-header.container {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+}
+
+.pre-header a {
+    color: var(--brand-quinary);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    text-decoration: none;
+    transition: color .5s ease;
+}
+
+.pre-header a:hover {
+    color: var(--brand-primary);
+}
+
 .main-header {
     display: flex;
 }
@@ -26,6 +51,8 @@ body {
     margin-left: auto;
     margin-right: 0;
 }
+
+
 
 .main-nav ul {
     display: flex;
@@ -130,6 +157,173 @@ body {
 .header-cards .card .picto{
     height: 100px;
 }
+
+/* BLOCK PROMO */
+.block.promo .main-content {
+    display: flex;
+}
+
+.block.promo .main-content div {
+    flex: 1;
+}
+
+.block.promo .main-content .visual {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* SVG PROMO */
+svg.vignette-promo {
+    background: rgb(247,99,98);
+    background: linear-gradient(150deg, rgba(248,120,120,1) 0%, rgba(248,100,100,1) 50%, rgba(248,120,120,1) 100%);
+  }
+  
+  #Moins {
+    animation: 3s levitate ease-in-out infinite;
+  }
+  #Trois {
+    animation: 3s levitate 0.25s ease-in-out infinite;
+  }
+  #Zero {
+    animation: 3s levitate 0.5s ease-in-out infinite;
+  }
+  #BulleA {
+    animation: 3s levitate 0.75s ease-in-out infinite;
+  }
+  #Barre {
+    animation: 3s levitate 1s ease-in-out infinite;
+  }
+  #BulleB2 {
+    animation: 3s levitate 1.25s ease-in-out infinite;
+  }
+  
+  #MoinsShdw {
+    transform-origin: 84.40px 210.79px;
+    animation: 3s blurShdw ease-in-out infinite;
+  }
+  #TroisShdw {
+    transform-origin: 236.23px 234.13px;
+    animation: 3s blurShdw 0.25s ease-in-out infinite;
+  }
+  #ZeroShdw {
+    transform-origin: 506.85px 299.38px;
+    animation: 3s blurShdw 0.5s ease-in-out infinite;
+  }
+  #BulleAShdw {
+    animation: 3s blurShdw 0.75s ease-in-out infinite;
+  }
+  #BarreShdw {
+    animation: 3s blurShdw 1s ease-in-out infinite;
+  }
+  #BulleBShdw {
+    animation: 3s blurShdw 1.25s ease-in-out infinite;
+  }
+  .cls-1 {
+          fill: #f77070;
+        }
+  
+        .cls-2 {
+          fill: #e34b45;
+        }
+  
+        .cls-11, .cls-15, .cls-16, .cls-3, .cls-6 {
+          fill: #fff;
+        }
+  
+        .cls-4 {
+          font-size: 17px;
+          fill: #850000;
+          font-family: Ebrima;
+          letter-spacing: -0.01em;
+        }
+  
+        .cls-5 {
+          letter-spacing: -0.01em;
+        }
+  
+        .cls-6 {
+          font-size: 40px;
+          letter-spacing: -0.01em;
+        }
+  
+        .cls-11, .cls-14, .cls-15, .cls-16, .cls-6 {
+          font-family: Arial-BoldMT, Arial;
+          font-weight: 700;
+        }
+  
+        .cls-7 {
+          letter-spacing: -0.03em;
+        }
+  
+        .cls-8 {
+          letter-spacing: -0.09em;
+        }
+  
+        .cls-9 {
+          fill: none;
+          stroke: #fff;
+          stroke-miterlimit: 10;
+        }
+  
+        .cls-10 {
+          fill: #0c96b6;
+        }
+  
+        .cls-11 {
+          font-size: 32px;
+          letter-spacing: -0.01em;
+        }
+  
+        .cls-12, .cls-13, .cls-17 {
+          font-family: ArialMT, Arial;
+          font-weight: 400;
+        }
+  
+        .cls-12 {
+          letter-spacing: -0.01em;
+        }
+  
+        .cls-13 {
+          letter-spacing: -0.02em;
+        }
+  
+        .cls-14 {
+          letter-spacing: -0.02em;
+        }
+  
+        .cls-15 {
+          font-size: 38px;
+          letter-spacing: 0.04em;
+        }
+  
+        .cls-16 {
+          font-size: 25px;
+          letter-spacing: 0.04em;
+        }
+  
+  @keyframes levitate {
+    0%{
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  
+  @keyframes blurShdw {
+    0%{    
+      filter: blur(0);
+    }
+    50% {  
+      filter: blur(5px);    
+    }
+    100% {    
+      filter: blur(0);
+    }
+  }
 
 /* VARIABLES */
 :root {
