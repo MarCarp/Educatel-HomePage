@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
+    background-color: var(--neutral-background);
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -16,9 +17,19 @@ body {
     width: 90%;
 }
 
+h2 {
+    color: #484949;
+    color: var(--brand-quinary);
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 /* HEADER */
 #header {
-    font-family: Poppins,Arial,sans-serif;
+    font-family: Poppins, Arial, sans-serif;
 }
 
 .pre-header.container {
@@ -31,11 +42,25 @@ body {
 .pre-header a {
     color: var(--brand-quinary);
     cursor: pointer;
+    display: flex;
+    height: 25px;
     font-size: 14px;
     font-weight: 600;
+    margin-right: 20px;
     letter-spacing: -.015em;
+    line-height: 1.8;
     text-decoration: none;
     transition: color .5s ease;
+}
+
+.pre-header a:last-child {
+    margin-right: 0;
+}
+
+.pre-header a svg {
+    margin-right: 8px;
+    height: 25px;
+    width: 25px;
 }
 
 .pre-header a:hover {
@@ -47,12 +72,11 @@ body {
 }
 
 .main-nav {
+    align-items: center;
     display: flex;
     margin-left: auto;
     margin-right: 0;
 }
-
-
 
 .main-nav ul {
     display: flex;
@@ -61,6 +85,15 @@ body {
 
 .main-nav li {
     list-style-type: none;
+    margin-right: 24px;
+}
+
+.main-nav a {
+    color: var(--brand-quinary);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Poppins, Arial, sans-serif;
+    text-decoration: none;
 }
 
 .main-nav .cta {
@@ -72,8 +105,9 @@ body {
     height: 35px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    
+    font-weight: 500;
     padding: 5px;
+    text-transform: uppercase;
     width: 190px;
 }
 
@@ -99,6 +133,7 @@ body {
 .home-header h1 .subtitle {
     display: block;
     font-size: 24px;
+    width: 80%;
 }
 
 .home-header .container {
@@ -137,29 +172,41 @@ body {
     height: 260px;
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-items: center;
     padding: 20px;
     text-decoration: none;
 }
+
+.header-cards .card:last-child {
+    margin-right: 0;
+}
+
 .header-cards .card h2 {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
     text-decoration: none;
-    width: 50%;
+    width: 70%;
 }
 
 .header-cards .card h2 strong {
     font-weight: 700;
 }
 
-.header-cards .card .picto{
+.header-cards .card .picto {
     height: 100px;
 }
 
 /* BLOCK PROMO */
+.block.promo .container {
+    background-color: var(--neutral-deepwhite);
+    border-radius: 5px;
+    padding: 40px;
+}
 .block.promo .main-content {
+    color: var(--brand-quinary);
     display: flex;
 }
 
@@ -167,167 +214,274 @@ body {
     flex: 1;
 }
 
+.block.promo .main-content .infos h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.block.promo .main-content .infos p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.block.promo .main-content .infos .mini {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
 .block.promo .main-content .visual {
     overflow: hidden;
     border-radius: 5px;
 }
 
+.block.promo .main-content .infos {
+    margin-left: 40px;
+}
+
 /* SVG PROMO */
 svg.vignette-promo {
-    background: rgb(247,99,98);
-    background: linear-gradient(150deg, rgba(248,120,120,1) 0%, rgba(248,100,100,1) 50%, rgba(248,120,120,1) 100%);
-  }
-  
-  #Moins {
+    background: rgb(247, 99, 98);
+    background: linear-gradient(150deg, rgba(248, 120, 120, 1) 0%, rgba(248, 100, 100, 1) 50%, rgba(248, 120, 120, 1) 100%);
+}
+
+svg.vignette-promo #Moins {
     animation: 3s levitate ease-in-out infinite;
-  }
-  #Trois {
-    animation: 3s levitate 0.25s ease-in-out infinite;
-  }
-  #Zero {
-    animation: 3s levitate 0.5s ease-in-out infinite;
-  }
-  #BulleA {
-    animation: 3s levitate 0.75s ease-in-out infinite;
-  }
-  #Barre {
-    animation: 3s levitate 1s ease-in-out infinite;
-  }
-  #BulleB2 {
-    animation: 3s levitate 1.25s ease-in-out infinite;
-  }
-  
-  #MoinsShdw {
+}
+
+svg.vignette-promo #Trois {
+    animation: 3s levitate -0.25s ease-in-out infinite;
+}
+
+svg.vignette-promo #Zero {
+    animation: 3s levitate -0.5s ease-in-out infinite;
+}
+
+svg.vignette-promo #BulleA {
+    animation: 3s levitate -0.75s ease-in-out infinite;
+}
+
+svg.vignette-promo #Barre {
+    animation: 3s levitate -1s ease-in-out infinite;
+}
+
+svg.vignette-promo #BulleB2 {
+    animation: 3s levitate -1.25s ease-in-out infinite;
+}
+
+svg.vignette-promo #MoinsShdw {
     transform-origin: 84.40px 210.79px;
     animation: 3s blurShdw ease-in-out infinite;
-  }
-  #TroisShdw {
+}
+
+svg.vignette-promo #TroisShdw {
     transform-origin: 236.23px 234.13px;
     animation: 3s blurShdw 0.25s ease-in-out infinite;
-  }
-  #ZeroShdw {
+}
+
+svg.vignette-promo #ZeroShdw {
     transform-origin: 506.85px 299.38px;
     animation: 3s blurShdw 0.5s ease-in-out infinite;
-  }
-  #BulleAShdw {
+}
+
+svg.vignette-promo #BulleAShdw {
     animation: 3s blurShdw 0.75s ease-in-out infinite;
-  }
-  #BarreShdw {
+}
+
+svg.vignette-promo #BarreShdw {
     animation: 3s blurShdw 1s ease-in-out infinite;
-  }
-  #BulleBShdw {
+}
+
+svg.vignette-promo #BulleBShdw {
     animation: 3s blurShdw 1.25s ease-in-out infinite;
-  }
-  .cls-1 {
-          fill: #f77070;
-        }
-  
-        .cls-2 {
-          fill: #e34b45;
-        }
-  
-        .cls-11, .cls-15, .cls-16, .cls-3, .cls-6 {
-          fill: #fff;
-        }
-  
-        .cls-4 {
-          font-size: 17px;
-          fill: #850000;
-          font-family: Ebrima;
-          letter-spacing: -0.01em;
-        }
-  
-        .cls-5 {
-          letter-spacing: -0.01em;
-        }
-  
-        .cls-6 {
-          font-size: 40px;
-          letter-spacing: -0.01em;
-        }
-  
-        .cls-11, .cls-14, .cls-15, .cls-16, .cls-6 {
-          font-family: Arial-BoldMT, Arial;
-          font-weight: 700;
-        }
-  
-        .cls-7 {
-          letter-spacing: -0.03em;
-        }
-  
-        .cls-8 {
-          letter-spacing: -0.09em;
-        }
-  
-        .cls-9 {
-          fill: none;
-          stroke: #fff;
-          stroke-miterlimit: 10;
-        }
-  
-        .cls-10 {
-          fill: #0c96b6;
-        }
-  
-        .cls-11 {
-          font-size: 32px;
-          letter-spacing: -0.01em;
-        }
-  
-        .cls-12, .cls-13, .cls-17 {
-          font-family: ArialMT, Arial;
-          font-weight: 400;
-        }
-  
-        .cls-12 {
-          letter-spacing: -0.01em;
-        }
-  
-        .cls-13 {
-          letter-spacing: -0.02em;
-        }
-  
-        .cls-14 {
-          letter-spacing: -0.02em;
-        }
-  
-        .cls-15 {
-          font-size: 38px;
-          letter-spacing: 0.04em;
-        }
-  
-        .cls-16 {
-          font-size: 25px;
-          letter-spacing: 0.04em;
-        }
-  
-  @keyframes levitate {
-    0%{
-      transform: translateY(5px);
+}
+
+svg.vignette-promo .cls-1 {
+    fill: #f77070;
+}
+
+svg.vignette-promo .cls-2 {
+    fill: #e34b45;
+}
+
+svg.vignette-promo .cls-11,
+svg.vignette-promo .cls-15,
+svg.vignette-promo .cls-16,
+svg.vignette-promo .cls-3,
+svg.vignette-promo .cls-6 {
+    fill: #fff;
+}
+
+svg.vignette-promo .cls-4 {
+    font-size: 17px;
+    fill: #850000;
+    font-family: Ebrima;
+    letter-spacing: -0.01em;
+}
+
+svg.vignette-promo .cls-5 {
+    letter-spacing: -0.01em;
+}
+
+svg.vignette-promo .cls-6 {
+    font-size: 40px;
+    letter-spacing: -0.01em;
+}
+
+svg.vignette-promo .cls-11,
+svg.vignette-promo .cls-14,
+svg.vignette-promo .cls-15,
+svg.vignette-promo .cls-16,
+svg.vignette-promo .cls-6 {
+    font-family: Arial-BoldMT, Arial;
+    font-weight: 700;
+}
+
+svg.vignette-promo .cls-7 {
+    letter-spacing: -0.03em;
+}
+
+svg.vignette-promo .cls-8 {
+    letter-spacing: -0.09em;
+}
+
+svg.vignette-promo .cls-9 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+svg.vignette-promo .cls-10 {
+    fill: #0c96b6;
+}
+
+svg.vignette-promo .cls-11 {
+    font-size: 32px;
+    letter-spacing: -0.01em;
+}
+
+svg.vignette-promo .cls-12,
+svg.vignette-promo .cls-13,
+svg.vignette-promo .cls-17 {
+    font-family: ArialMT, Arial;
+    font-weight: 400;
+}
+
+svg.vignette-promo .cls-12 {
+    letter-spacing: -0.01em;
+}
+
+svg.vignette-promo .cls-13 {
+    letter-spacing: -0.02em;
+}
+
+svg.vignette-promo .cls-14 {
+    letter-spacing: -0.02em;
+}
+
+svg.vignette-promo .cls-15 {
+    font-size: 38px;
+    letter-spacing: 0.04em;
+}
+
+svg.vignette-promo .cls-16 {
+    font-size: 25px;
+    letter-spacing: 0.04em;
+}
+
+/* BLOCK SECTORS */
+.block.sectors .sectors {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.block.sectors .sector {
+    list-style-type: none;
+    flex-basis: 25%;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.block.sectors .sector a {
+    background-color: var(--brand-primary);
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    color: var(--brand-quinary);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0 0 15px;
+    text-decoration: none;
+    transition: color .3s;
+    z-index: 1;
+    margin: 0 10px;
+    height: 100%;
+}
+
+.block.sectors .sector a:before {
+    content: "";
+    background-color: var(--neutral-deepwhite);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 36px;
+    border-radius: 0 0 5px 5px;
+    transition: 0.3s height;
+    z-index: -1;
+}
+
+.block.sectors .sector a:hover {
+    color: var(--neutral-deepwhite);
+}
+
+.block.sectors .sector a:hover:before {
+    height: 0;
+}
+
+.block.sectors .sector:nth-child(4n -3) a {
+    margin-left: 0;
+}
+
+.block.sectors .sector:nth-child(4n) a {
+    margin-right: 0;
+}
+
+@keyframes levitate {
+    0% {
+        transform: translateY(5px);
     }
+
     50% {
-      transform: translateY(-5px);
+        transform: translateY(-5px);
     }
+
     100% {
-      transform: translateY(5px);
+        transform: translateY(5px);
     }
-  }
-  
-  @keyframes blurShdw {
-    0%{    
-      filter: blur(0);
+}
+
+@keyframes blurShdw {
+    0% {
+        filter: blur(0);
     }
-    50% {  
-      filter: blur(5px);    
+
+    50% {
+        filter: blur(5px);
     }
-    100% {    
-      filter: blur(0);
+
+    100% {
+        filter: blur(0);
     }
-  }
+}
 
 /* VARIABLES */
 :root {
     --brand-primary: #f76363;
     --brand-quinary: #484949;
     --neutral-deepwhite: #fff;
-  }
+    --neutral-background: #f9fafb;
+}
