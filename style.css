@@ -11,6 +11,10 @@ body {
 }
 
 /* GLOBAL */
+.block {
+    margin-bottom: 80px;
+}
+
 .container {
     margin: auto;
     max-width: 1280px;
@@ -231,163 +235,13 @@ h2 {
     line-height: 1.8;
 }
 
-.block.promo .main-content .visual {
+.block.promo .main-content .visual img {
     overflow: hidden;
     border-radius: 5px;
 }
 
 .block.promo .main-content .infos {
     margin-left: 40px;
-}
-
-/* SVG PROMO */
-svg.vignette-promo {
-    background: rgb(247, 99, 98);
-    background: linear-gradient(150deg, rgba(248, 120, 120, 1) 0%, rgba(248, 100, 100, 1) 50%, rgba(248, 120, 120, 1) 100%);
-}
-
-svg.vignette-promo #Moins {
-    animation: 3s levitate ease-in-out infinite;
-}
-
-svg.vignette-promo #Trois {
-    animation: 3s levitate -0.25s ease-in-out infinite;
-}
-
-svg.vignette-promo #Zero {
-    animation: 3s levitate -0.5s ease-in-out infinite;
-}
-
-svg.vignette-promo #BulleA {
-    animation: 3s levitate -0.75s ease-in-out infinite;
-}
-
-svg.vignette-promo #Barre {
-    animation: 3s levitate -1s ease-in-out infinite;
-}
-
-svg.vignette-promo #BulleB2 {
-    animation: 3s levitate -1.25s ease-in-out infinite;
-}
-
-svg.vignette-promo #MoinsShdw {
-    transform-origin: 84.40px 210.79px;
-    animation: 3s blurShdw ease-in-out infinite;
-}
-
-svg.vignette-promo #TroisShdw {
-    transform-origin: 236.23px 234.13px;
-    animation: 3s blurShdw 0.25s ease-in-out infinite;
-}
-
-svg.vignette-promo #ZeroShdw {
-    transform-origin: 506.85px 299.38px;
-    animation: 3s blurShdw 0.5s ease-in-out infinite;
-}
-
-svg.vignette-promo #BulleAShdw {
-    animation: 3s blurShdw 0.75s ease-in-out infinite;
-}
-
-svg.vignette-promo #BarreShdw {
-    animation: 3s blurShdw 1s ease-in-out infinite;
-}
-
-svg.vignette-promo #BulleBShdw {
-    animation: 3s blurShdw 1.25s ease-in-out infinite;
-}
-
-svg.vignette-promo .cls-1 {
-    fill: #f77070;
-}
-
-svg.vignette-promo .cls-2 {
-    fill: #e34b45;
-}
-
-svg.vignette-promo .cls-11,
-svg.vignette-promo .cls-15,
-svg.vignette-promo .cls-16,
-svg.vignette-promo .cls-3,
-svg.vignette-promo .cls-6 {
-    fill: #fff;
-}
-
-svg.vignette-promo .cls-4 {
-    font-size: 17px;
-    fill: #850000;
-    font-family: Ebrima;
-    letter-spacing: -0.01em;
-}
-
-svg.vignette-promo .cls-5 {
-    letter-spacing: -0.01em;
-}
-
-svg.vignette-promo .cls-6 {
-    font-size: 40px;
-    letter-spacing: -0.01em;
-}
-
-svg.vignette-promo .cls-11,
-svg.vignette-promo .cls-14,
-svg.vignette-promo .cls-15,
-svg.vignette-promo .cls-16,
-svg.vignette-promo .cls-6 {
-    font-family: Arial-BoldMT, Arial;
-    font-weight: 700;
-}
-
-svg.vignette-promo .cls-7 {
-    letter-spacing: -0.03em;
-}
-
-svg.vignette-promo .cls-8 {
-    letter-spacing: -0.09em;
-}
-
-svg.vignette-promo .cls-9 {
-    fill: none;
-    stroke: #fff;
-    stroke-miterlimit: 10;
-}
-
-svg.vignette-promo .cls-10 {
-    fill: #0c96b6;
-}
-
-svg.vignette-promo .cls-11 {
-    font-size: 32px;
-    letter-spacing: -0.01em;
-}
-
-svg.vignette-promo .cls-12,
-svg.vignette-promo .cls-13,
-svg.vignette-promo .cls-17 {
-    font-family: ArialMT, Arial;
-    font-weight: 400;
-}
-
-svg.vignette-promo .cls-12 {
-    letter-spacing: -0.01em;
-}
-
-svg.vignette-promo .cls-13 {
-    letter-spacing: -0.02em;
-}
-
-svg.vignette-promo .cls-14 {
-    letter-spacing: -0.02em;
-}
-
-svg.vignette-promo .cls-15 {
-    font-size: 38px;
-    letter-spacing: 0.04em;
-}
-
-svg.vignette-promo .cls-16 {
-    font-size: 25px;
-    letter-spacing: 0.04em;
 }
 
 /* BLOCK SECTORS */
@@ -448,34 +302,6 @@ svg.vignette-promo .cls-16 {
 
 .block.sectors .sector:nth-child(4n) a {
     margin-right: 0;
-}
-
-@keyframes levitate {
-    0% {
-        transform: translateY(5px);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-
-    100% {
-        transform: translateY(5px);
-    }
-}
-
-@keyframes blurShdw {
-    0% {
-        filter: blur(0);
-    }
-
-    50% {
-        filter: blur(5px);
-    }
-
-    100% {
-        filter: blur(0);
-    }
 }
 
 /* VARIABLES */
