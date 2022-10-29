@@ -304,6 +304,22 @@ h2 {
     margin-right: 0;
 }
 
+/* FOOTER */
+footer {
+    background-color: var(--brand-quinary);
+}
+
+footer .cartouche {
+    background-color: var(--neutral-deepwhite);
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 1px 14px rgb(0 0 0 / 10%);
+    color: var(--brand-quinary);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
 /* VARIABLES */
 :root {
     --brand-primary: #f76363;
