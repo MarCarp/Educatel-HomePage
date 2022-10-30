@@ -226,6 +226,7 @@ h2 {
     border-radius: 5px;
     padding: 40px;
 }
+
 .block.promo .main-content {
     color: var(--brand-quinary);
     display: flex;
@@ -335,6 +336,29 @@ footer .cartouche {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 40px;
+}
+
+footer .cartouche .institutional {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 190px;
+    text-align: center;
+}
+
+footer .cartouche .institutional .logo {
+    height: 80px;
+    width: 80px;
+}
+
+footer .cartouche .institutional .logo img{
+    width: 100%;
+}
+
+footer .cartouche .institutional .infos {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /* VARIABLES */
