@@ -73,6 +73,7 @@ h2 {
 
 .main-header {
     display: flex;
+    align-items: center;
 }
 
 .main-nav {
@@ -117,8 +118,8 @@ h2 {
 
 /* HOME HEADER */
 .home-header {
-    height: 550px;
     position: relative;
+    margin-bottom: 70px;
     overflow: hidden;
 }
 
@@ -127,6 +128,8 @@ h2 {
     font-size: 72px;
     font-weight: 700;
     text-align: center;
+    display: inline-block;
+    margin: 70px auto 40px;
 }
 
 .home-header h1 strong {
@@ -137,11 +140,15 @@ h2 {
 .home-header h1 .subtitle {
     display: block;
     font-size: 24px;
+    margin: auto;
     width: 80%;
 }
 
 .home-header .container {
     position: relative;
+    min-height: 520px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .background-image {
@@ -159,6 +166,7 @@ h2 {
 .background-image img {
     margin-left: 50%;
     transform: translateX(-50%);
+    filter: brightness(0.8);
     width: 92%;
 }
 
@@ -171,15 +179,21 @@ h2 {
     background: var(--neutral-deepwhite);
     border-radius: 5px;
     color: var(--brand-quinary);
-    margin-right: 15px;
+    margin-right: 20px;
     box-shadow: 0 1px 20px rgb(0 0 0 / 10%);
     height: 260px;
     display: flex;
     flex-direction: column;
     flex: 1;
     align-items: center;
+    justify-content: center;
     padding: 20px;
     text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.header-cards .card:hover {
+    transform: translateY(-10px);
 }
 
 .header-cards .card:last-child {
@@ -200,7 +214,10 @@ h2 {
 }
 
 .header-cards .card .picto {
+    display: flex;
+    align-items: center;
     height: 100px;
+    max-width: 100px;
 }
 
 /* BLOCK PROMO */
