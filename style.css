@@ -322,9 +322,63 @@ h2 {
     margin-right: 0;
 }
 
+/* BLOCK REASSURANCES */
+.block.reassurances .reassurance {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+
+.block.reassurances .reassurance:nth-child(n + 4) {
+    flex-basis: 50%;
+}
+
+.block.reassurances .reas-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block.reassurances .picto {
+    background-color: var(--brand-senary);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block.reassurances .picto svg {
+    fill: var(--brand-secondary);    
+    height: 64px;
+    width: 64px;
+}
+
+.block.reassurances .reassurance .infos {
+    color: var(--brand-quinary);
+    text-align: center;
+}
+
+.block.reassurances .reassurance .main {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 16px 0 8px;
+}
+
+.block.reassurances .reassurance .desc {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--brand-quinary);
+    display: flex;
+    margin-top: 200px;
 }
 
 footer .cartouche {
@@ -336,6 +390,7 @@ footer .cartouche {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 40px;
+    margin-top: -140px;
 }
 
 footer .cartouche .institutional {
@@ -364,7 +419,9 @@ footer .cartouche .institutional .infos {
 /* VARIABLES */
 :root {
     --brand-primary: #f76363;
+    --brand-secondary: #0b95b4;
     --brand-quinary: #484949;
+    --brand-senary: #e1f0f4;
     --neutral-deepwhite: #fff;
     --neutral-background: #f9fafb;
 }
